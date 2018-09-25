@@ -1,95 +1,200 @@
 This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
 
 1) What are the three primary tenants of Object Oriented Programming (OOP):
+	Inheritance
 
 2) Why is OOP useful?
+	It allows us to not write as much redundant code by connecting classes. Things also stay more protected by having private/protected classes and methods that aren't open to everyone. 
 
 3) What must a subclass constructor do if the superclass does not have a default constructor?
+	The subclass has to create a default constructor first and then create it's own constructor. 
 
 4) What is it called when you have two or more methods in the same class that have the same name but different arguments?
+	Overloading methods. The one that fits with the arguments you provide when you call the method will be used. 
 
 5) What is it called when you have two more constructors in the same class that have the same name but different arguments?
+	Overloading constructors. 
 
 6) What aspect of OOP do the answers to two previous questions support?
+	Inheritance. 
 
 7) Explain public, private, protected and default?
+	Public classes and methods can be reached from outside the package that the class is in. Private classes and methods can only be reached by that class. Protected can be reached from that class or any subclasses in that package. Default can reached by anything inside that package or a subclass outside of that package. 
 
 8) Explain the steps to compile and run a Java program from the command line. Assume that the Java program is in a package title, "package codingnomads.forever;"
+	Go to that location in the command line.
+	git compile codingnomads.java
+	git run (file name)
+
 
 9) How do you pass arguments to a Java application from the CLI? How do you access those arguments once inside the main() method?
+	You use a scanner in the method to tell the program it needs to ask for an input from the user. 
 
 10) Write a simple main method that will print out the first and last arguments that were passed in from the command line:
+	public static void main(){
+		int x = scanner input;
+		int y = scanner input;
+		s o u t (x);
+		s o u t (y);
+	}
 
 11) Now modify that method so that it fails gracefully if no (or not enough) arguments were passed in:
+	public static void main(){
+		try{
+			int x = scanner input;
+			int y = scanner input;
+			s o u t (x);
+			s o u t (y);
+		}
+		except(invalidArgument){
+			s o u t ("You didn't input enough arguments!")
+		}
+	}
 
 12) What are the two ways we can create a multithreaded program?
 	
 13) Write a very simple example of each below:
 
 14) Create a custom exception below:
+	
 
 15) Write a very simple method that demonstrates throwing the exception above:
+	public method1(){
+		throw(myCustomException){}	
+	}
 
 16) Explain the following:
-	- throw: 
+	- throw: This raises an excetion
 	- throws: 
-	- continue: 
-	- break: 
-	- return: 
+	- continue: this passes to the next part without doing anything new. 
+	- break: this jumps out of the current loop
+	- return: This is what the method returns. 
 
 17) write the complete method signature of the main() method below:
+	public static main void(){}
 	
 18) Write a complete generic method that takes in an array of (any) numeric data type (and only numeric data types) and returns the sum of all numbers in the array as a double:
+	
+
 
 19) Explain the following - and give an example class (just the name of the class) for each:
 	- byte stream: 
-	- character stream: 
+	- character stream:
 	- buffered stream: 
 
 20) Explain the difference between a static and non-static variable:
+	Static variables are not able to be changed in a class for each object. Non-static variables are created for each object in the class.
 
 21) How do you call a non-static method from a static context?
+	You have to create an object first. 
 	
 22) What does static mean? Why/where/when would we use static as opposed to non-static?
+	Static means that it is the same throughout the entire class. We use static when we don't want to create an object first and we want the variable to be the same through the entire class. 
 
 23) Write a complete method that reverses an array in place using only one extra variable:
+	public static main void(){
+	int myArray[] = int[5];
+		for (int x = myArray.length; x>=0; x--){
+			s o u t (myArray[x]);
+		}
+	}
 
 24) When should you throw an exception rather than catch the exception?
+	When you want to catch it later in a different class. 
 
 25) Demonstrate a while loop, and a for loop, that print out every other odd number between 1000 and 0 in a descending fashion:
+	public static void main(){
+		int x = 1000;
+		for (x; x<=0; x--){
+			while(x % 2 != 0){
+				s o u t (x);
+			}
+			else{
+				continue;
+			}
+		}	
+	}
 
 26) What is pass by value? How does it compare to pass by reference?
 
 27) How comfortable do you feel answering the questions above?
+	not at all
 
 28) Please outline the workflow for Git & GitHub - be as specific as possible
+	You first clone a repository. 
+	Then you create a new branch in the terminal.
+	Then you check the status in the terminal by saying git status.
+	Then you change some of the code in your new branch.
+	Then you add your changes to the staging area using git add and then the file name.
+	Then you commit those changes in the terminal using git commit (you insert your git comment here).
+	Then you push those changes back to git hub using git push. 
 
 29) Please write down as many CLI commands that you can think of:
+	cd
+	pwd
+	ls
+	mkdir
+	git pull
+	git status
+	git push
+	git add
+	git commit
 
 30) Please explain what a method "return type" is:
+	This is the type of variable that the method has to return after running. Void means it returns nothing. 
 
 31) Please demonstrate a switch statement below:
+	int x = 5;
+	switch(x){
+	case 5 {return("x is five") }
+	case 4 {return("x is four") }
+	case 3 {return("x is three") }
+	case 2 {return("x is two") }
+	case 1 {return("x is one") }
+	}
 
 32) What does it mean to "pass" values to a method? 
+	This is when values are obtained from outside of the method and used inside the method. 
 
 33) What are method parameters?
+	These are the set of words at the beginning of the method that are the guidelines for the method (if it's private or public, if it returns a value, if it takes an argument, etc).
 
 34) What is an instance variable? How does an instance variable differ from other variables in a class/method?
+	An instance variable is a variable that is non-static and is created for an object inside a class. Other classes and methods (static ones) are created for the class as a whole and not the individual objects. 
 
 35) Please demonstrate the use of a "for each" loop:
+	for (int x = 0; x<5; x++){
+		return x;
+	}
 
 36) What is an interface? What makes an interface unique?
+	An interface is like a class but it doesn't have the actual method bodies, just the method definitions. All classes that use that interface have to define those methods. 
 
 37) Please demonstrate a complete try/catch/finally block:
+	int x = 0;
+	int y;
+	try{
+		y = x/0;
+		return y;
+	}
+	catch(valueException){
+		return(x);
+	}
+	finally{
+		s o u t ("You divided by x.")
+	} 
 
 38) When do we use "throw" and "throws"?
+	We use these when we want to call an exception and catch it later. 
 
 39) How comfortable do you feel with the material covered above?
+	Not comfortable at all- I know I have learned them all at one point but don't remember enough to answer questions about them without brushing up on the material. 
 
 40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
 	Hint: use "git remote add <your_name> <url_to_your_new_repo>" to add a second remote repository then use "git push <your_name> master" to push the code to your repoistory rather than mine.
 
 41) What grade would you give yourself on this exam?
+	35%
 
 Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
 
