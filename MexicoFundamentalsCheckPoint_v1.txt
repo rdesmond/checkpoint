@@ -1,0 +1,97 @@
+This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
+
+1) What are the three primary tenants of Object Oriented Programming (OOP):
+
+2) Why is OOP useful?
+
+3) What must a subclass constructor do if the superclass does not have a default constructor?
+
+4) What is it called when you have two or more methods in the same class that have the same name but different arguments?
+
+5) What is it called when you have two more constructors in the same class that have the same name but different arguments?
+
+6) What aspect of OOP do the answers to two previous questions support?
+
+7) Explain public, private, protected and default?
+
+8) Explain the steps to compile and run a Java program from the command line. Assume that the Java program is in a package title, "package codingnomads.forever;"
+
+9) How do you pass arguments to a Java application from the CLI? How do you access those arguments once inside the main() method?
+
+10) Write a simple main method that will print out the first and last arguments that were passed in from the command line:
+
+11) Now modify that method so that it fails gracefully if no (or not enough) arguments were passed in:
+
+12) What are the two ways we can create a multithreaded program?
+	
+13) Write a very simple example of each below:
+
+14) Create a custom exception below:
+
+15) Write a very simple method that demonstrates throwing the exception above:
+
+16) Explain the following:
+	- throw: 
+	- throws: 
+	- continue: 
+	- break: 
+	- return: 
+
+17) write the complete method signature of the main() method below:
+	
+18) Write a complete generic method that takes in an array of (any) numeric data type (and only numeric data types) and returns the sum of all numbers in the array as a double:
+
+19) Explain the following - and give an example class (just the name of the class) for each:
+	- byte stream: 
+	- character stream: 
+	- buffered stream: 
+
+20) Explain the difference between a static and non-static variable:
+
+21) How do you call a non-static method from a static context?
+	
+22) What does static mean? Why/where/when would we use static as opposed to non-static?
+
+23) Write a complete method that reverses an array in place using only one extra variable:
+
+24) When should you throw an exception rather than catch the exception?
+
+25) Demonstrate a while loop, and a for loop, that print out every other odd number between 1000 and 0 in a descending fashion:
+
+26) What is pass by value? How does it compare to pass by reference?
+
+27) How comfortable do you feel answering the questions above?
+
+28) Please outline the workflow for Git & GitHub - be as specific as possible
+
+29) Please write down as many CLI commands that you can think of:
+
+30) Please explain what a method "return type" is:
+
+31) Please demonstrate a switch statement below:
+
+32) What does it mean to "pass" values to a method? 
+
+33) What are method parameters?
+
+34) What is an instance variable? How does an instance variable differ from other variables in a class/method?
+
+35) Please demonstrate the use of a "for each" loop:
+
+36) What is an interface? What makes an interface unique?
+
+37) Please demonstrate a complete try/catch/finally block:
+
+38) When do we use "throw" and "throws"?
+
+39) How comfortable do you feel with the material covered above?
+
+40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
+
+41) What grade would you give yourself on this exam?
+
+Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
+
+Double Bonus: Write a Queue and/or Stack class - extra bonus - make it generic:
+
+	
