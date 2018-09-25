@@ -1,7 +1,7 @@
 This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
 
 1) What are the three primary tenants of Object Oriented Programming (OOP):
-
+asnwer
 2) Why is OOP useful?
 
 3) What must a subclass constructor do if the superclass does not have a default constructor?
