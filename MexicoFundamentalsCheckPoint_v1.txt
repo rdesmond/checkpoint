@@ -1,78 +1,122 @@
 This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
 
 1) What are the three primary tenants of Object Oriented Programming (OOP):
+encapsulation, polymorphism, inheritance
 
 2) Why is OOP useful?
+it provides the programmer greater flexibilty
 
 3) What must a subclass constructor do if the superclass does not have a default constructor?
+pass the word 'super'
 
 4) What is it called when you have two or more methods in the same class that have the same name but different arguments?
+method overloading
 
 5) What is it called when you have two more constructors in the same class that have the same name but different arguments?
+constructor overloading
 
 6) What aspect of OOP do the answers to two previous questions support?
+polymorphism
 
 7) Explain public, private, protected and default?
+public objects can be accessed outside of the class where they are created
+private objects cannot be accessed outside of the class where they are created
 
 8) Explain the steps to compile and run a Java program from the command line. Assume that the Java program is in a package title, "package codingnomads.forever;"
+javac packagecodingnomads.forever;
+java packagecodingnomads.forever;
 
 9) How do you pass arguments to a Java application from the CLI? How do you access those arguments once inside the main() method?
 
+
 10) Write a simple main method that will print out the first and last arguments that were passed in from the command line:
+public static void main (Args[]);
+   println (command1, command2);
 
 11) Now modify that method so that it fails gracefully if no (or not enough) arguments were passed in:
+Try prntln (command1, command2);
+Catch Exception exc;
 
 12) What are the two ways we can create a multithreaded program?
+implement Runnable
+extends Thread
 	
 13) Write a very simple example of each below:
+Class Run1 implements Runnable {}
+Class Thread1 extends Thread{}
 
 14) Create a custom exception below:
 
 15) Write a very simple method that demonstrates throwing the exception above:
 
 16) Explain the following:
-	- throw: 
+	- throw: tells the program to throw an exception
 	- throws: 
-	- continue: 
-	- break: 
-	- return: 
+	- continue: tells the program to continue to the next line
+	- break: tells the program to stop executing a block of code
+	- return: tells the program to return to the beginning of a code block
 
 17) write the complete method signature of the main() method below:
+public static void main (Args[])
 	
 18) Write a complete generic method that takes in an array of (any) numeric data type (and only numeric data types) and returns the sum of all numbers in the array as a double:
 
+
 19) Explain the following - and give an example class (just the name of the class) for each:
-	- byte stream: 
-	- character stream: 
-	- buffered stream: 
+	- byte stream: outputs a series of bytes
+	- character stream: outputs a series of characters
+	- buffered stream: takes an input of many characters and stores them in a buffer before outputting them
 
 20) Explain the difference between a static and non-static variable:
+static - each occurrence of that variable cannot have its own instance
+non-static - each occurrence of the variable can have its own instance
 
 21) How do you call a non-static method from a static context?
+create a new instance of the method in the static context
 	
 22) What does static mean? Why/where/when would we use static as opposed to non-static?
+static means each instance of that object cannot be changed
 
 23) Write a complete method that reverses an array in place using only one extra variable:
+public int( ){
+	nums = []
+}
 
 24) When should you throw an exception rather than catch the exception?
+Whenever you throw an exception you have to catch it.
 
 25) Demonstrate a while loop, and a for loop, that print out every other odd number between 1000 and 0 in a descending fashion:
+While (i=1000, i>0, i--)
+   println(i--);
+
+For (i=1000, i>0, i--)
+   println(i--); 
 
 26) What is pass by value? How does it compare to pass by reference?
 
 27) How comfortable do you feel answering the questions above?
+I feel comfortable knowing I don't know the answers to many of them.
 
 28) Please outline the workflow for Git & GitHub - be as specific as possible
+git add <filename>
+git commit -m
+git push <filename>
 
 29) Please write down as many CLI commands that you can think of:
+pwd, ls, mkdir, cd, mv, clear
 
 30) Please explain what a method "return type" is:
+the type of data returned by the message
 
 31) Please demonstrate a switch statement below:
+Case1: Switch
+Case2: Switch....
 
 32) What does it mean to "pass" values to a method? 
+to enter values into the parentheses of the method
 
 33) What are method parameters?
+values that the method should return
 
 34) What is an instance variable? How does an instance variable differ from other variables in a class/method?
 
@@ -85,11 +129,13 @@ This is a closed book, closed internet exam. This is meant to gauge where the cl
 38) When do we use "throw" and "throws"?
 
 39) How comfortable do you feel with the material covered above?
+not too comfortable; especially demonstrating loops, methods, try/catch, etc. without examples for reference
 
 40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
 	Hint: use "git remote add <your_name> <url_to_your_new_repo>" to add a second remote repository then use "git push <your_name> master" to push the code to your repoistory rather than mine.
 
 41) What grade would you give yourself on this exam?
+D
 
 Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
 
