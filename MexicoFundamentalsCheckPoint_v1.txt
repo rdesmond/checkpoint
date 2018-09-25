@@ -87,6 +87,7 @@ This is a closed book, closed internet exam. This is meant to gauge where the cl
 39) How comfortable do you feel with the material covered above?
 
 40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
+	Hint: use "git remote add <your_name> <url_to_your_new_repo>" to add a second remote repository then use "git push <your_name> master" to push the code to your repoistory rather than mine.
 
 41) What grade would you give yourself on this exam?
 
