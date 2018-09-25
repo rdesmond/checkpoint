@@ -1,55 +1,107 @@
-This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
+This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun!
 
 1) What are the three primary tenants of Object Oriented Programming (OOP):
+Inheritance, Polymorphism, Encapsulation
 
 2) Why is OOP useful?
+Easier to understand by breaking it into parts (Objects)
 
 3) What must a subclass constructor do if the superclass does not have a default constructor?
+Java provides default constructors
 
 4) What is it called when you have two or more methods in the same class that have the same name but different arguments?
+Overloading
 
 5) What is it called when you have two more constructors in the same class that have the same name but different arguments?
+Overloading
 
 6) What aspect of OOP do the answers to two previous questions support?
+Polymorphism
 
 7) Explain public, private, protected and default?
+Public - all packages
+Private - only class
+Protected - only package
 
 8) Explain the steps to compile and run a Java program from the command line. Assume that the Java program is in a package title, "package codingnomads.forever;"
+javac codingnomads/forever/Java.java
+java codingnomads.forever.Java
 
 9) How do you pass arguments to a Java application from the CLI? How do you access those arguments once inside the main() method?
 
 10) Write a simple main method that will print out the first and last arguments that were passed in from the command line:
+public static void main(String[] args) {
+        if (args.length > 0) {
+            System.out.println(args[0]);
+            System.out.println(args[args.length-1]);
+        } else {
+            System.out.println("No arguments to print");
+        }
+    }
 
 11) Now modify that method so that it fails gracefully if no (or not enough) arguments were passed in:
+^^
 
 12) What are the two ways we can create a multithreaded program?
-	
+implements Runnable or extends Thread
+
 13) Write a very simple example of each below:
+public class Test implements Runnable {
+    public void run() {
+        System.out.println("print me");
+    }
+}
+
+public class Test extends Thread {
+    public void run() {
+        System.out.println("print me");
+    }
+}
 
 14) Create a custom exception below:
+public class CustomE extends Exception {
+    String message;
+
+    public CustomE(String message) {
+        super(message);
+    }
+}
 
 15) Write a very simple method that demonstrates throwing the exception above:
+public void math() throws Exception {
+        double randomNum = Math.random();
+        if (randomNum < 0) {
+            throw new CustomE("exception");
+        }
+    }
 
 16) Explain the following:
-	- throw: 
-	- throws: 
-	- continue: 
-	- break: 
-	- return: 
+	- throw: Stops the program, throw Exception
+	- throws: Throws the exception to the calling class or method
+	- continue: Continue to the next iteration of the loop
+	- break: Stop the loop, continue after
+	- return: Returns from method
 
 17) write the complete method signature of the main() method below:
-	
+public static void main(String[] args) {}
+
 18) Write a complete generic method that takes in an array of (any) numeric data type (and only numeric data types) and returns the sum of all numbers in the array as a double:
+public <T extends Number> double genMeth(T[] numArr) {
+        double adding = 0;
+        for (T num : numArr) adding += num;
+        return adding;
+    }
 
 19) Explain the following - and give an example class (just the name of the class) for each:
-	- byte stream: 
-	- character stream: 
-	- buffered stream: 
+	- byte stream:
+	- character stream:
+	- buffered stream:
 
 20) Explain the difference between a static and non-static variable:
+Static variables can be called with instantiating an object of that class
 
 21) How do you call a non-static method from a static context?
-	
+
 22) What does static mean? Why/where/when would we use static as opposed to non-static?
 
 23) Write a complete method that reverses an array in place using only one extra variable:
@@ -70,7 +122,7 @@ This is a closed book, closed internet exam. This is meant to gauge where the cl
 
 31) Please demonstrate a switch statement below:
 
-32) What does it mean to "pass" values to a method? 
+32) What does it mean to "pass" values to a method?
 
 33) What are method parameters?
 
@@ -94,5 +146,3 @@ This is a closed book, closed internet exam. This is meant to gauge where the cl
 Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
 
 Double Bonus: Write a Queue and/or Stack class - extra bonus - make it generic:
-
-	
