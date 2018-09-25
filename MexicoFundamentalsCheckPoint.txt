@@ -86,7 +86,9 @@ This is a closed book, closed internet exam. This is meant to gauge where the cl
 
 39) How comfortable do you feel with the material covered above?
 
-40) What grade would you give yourself on this exam?
+40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
+
+41) What grade would you give yourself on this exam?
 
 Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
 
