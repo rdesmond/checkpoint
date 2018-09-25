@@ -1,95 +1,295 @@
 This is a closed book, closed internet exam. This is meant to gauge where the class is as a whole following our online prep phase. Please complete these questions using only Vim. When you're done please send the file to myself via email. ryan@codingnomads.co Take your time, and have fun! 
 
 1) What are the three primary tenants of Object Oriented Programming (OOP):
+	
+	- Polymorphism
+	- Inheritance
+	- 
 
 2) Why is OOP useful?
 
+	OOP is useful as it allows you to design and create your own objects, functions and structures. 
+
 3) What must a subclass constructor do if the superclass does not have a default constructor?
+
+	The subclass constructor needs to pass the required arguments for the superclass constructor within its own constructor.
 
 4) What is it called when you have two or more methods in the same class that have the same name but different arguments?
 
+	Methods overloading
+
 5) What is it called when you have two more constructors in the same class that have the same name but different arguments?
+
+	Constructor overloading
 
 6) What aspect of OOP do the answers to two previous questions support?
 
+	Polylmorphism
+
 7) Explain public, private, protected and default?
+
+	public allows access  from anywhere else in the program.
+	private only allows access within the current package/class as well as in sub classes
+	protected allows access within the current package/class but not in sub classes
+	default only allows access within the current package/class as well as in sub classes
 
 8) Explain the steps to compile and run a Java program from the command line. Assume that the Java program is in a package title, "package codingnomads.forever;"
 
+	javac codingnomads.forever.java
+	java codingnomads.forever.class
+
 9) How do you pass arguments to a Java application from the CLI? How do you access those arguments once inside the main() method?
+
+	I think you pass arguments in using a '-' before each argument.
+	
+	Inside the main method there is a String array called args[] which should contain the passed arguments.
 
 10) Write a simple main method that will print out the first and last arguments that were passed in from the command line:
 
+	public static void main(String[] args) {
+		System.out.println(args[0]);
+		System.out.println(args[args.Length]);
+	}
+
 11) Now modify that method so that it fails gracefully if no (or not enough) arguments were passed in:
 
+	public static void main(String[] args) {
+		try {
+			System.out.println(args[0]);
+			System.out.println(args[args.size]);
+		}
+		catch (Exception e) {
+			System.out.println("No arguments passed");
+		}
+	}
+
 12) What are the two ways we can create a multithreaded program?
+
+	You can make a multi threaded program two ways:
+	 - You can implement the Thread class
+	 - You can inherit the Runnable class
 	
 13) Write a very simple example of each below:
 
+	class thread_1 implements Thread {
+		
+		thread_1 () {
+			me.start();
+		}
+		run(){
+			System.out.println("Thread 1 running");
+		}	
+	}
+
+	class thread_2 inherits Runnable {
+	
+		Thread thread;
+		
+		thread_2 () {
+			thread = new Thread();
+			thread.start();
+		}
+		run(){
+			System.out.println("Thread 2 running");
+		}	
+	}
+
 14) Create a custom exception below:
+
+	Exception customException = new Exception();
 
 15) Write a very simple method that demonstrates throwing the exception above:
 
+	static int divide throws customException (int x, int y){
+		try {
+			return x/y;
+		}
+		catch (customException c) {
+			throw c;
+		}	
+	}
+
 16) Explain the following:
 	- throw: 
+	The throw keyword is used to throw a specific exception to the caller of the method.
 	- throws: 
+	The throws keyword is used to indicate that this method could possibly throws a specific exception.
 	- continue: 
+	The continue keyword is used to continue to jump to the next interation in a loop
 	- break: 
+	The break keyword is used to break out of a loop completely
 	- return: 
+	The return keyword is used in a method to return a value to the caller of the method.
 
 17) write the complete method signature of the main() method below:
+
+	public static void main(String[] args) {
+	}
 	
 18) Write a complete generic method that takes in an array of (any) numeric data type (and only numeric data types) and returns the sum of all numbers in the array as a double:
 
+	static double sum(sumArray[]<T>){
+		double currentSum = 0;
+		
+		for (int i = 0; i < sumArray.size; i++) {
+			currentSum += sumArray[i];
+		} 
+		
+		return currentSum;
+	}
+
 19) Explain the following - and give an example class (just the name of the class) for each:
 	- byte stream: 
+	 ByteInputStream
 	- character stream: 
+	 CharacterInputStream
 	- buffered stream: 
+	 BufferredInputStream
 
 20) Explain the difference between a static and non-static variable:
 
+	static variables are variables that are related to a class and are indepent of each new object, therefore each new object
+	will have the same value for a static variable.
+	
+	non-static variables can be assigned different values per each new object created.
+
 21) How do you call a non-static method from a static context?
+	
+	By creating a new object of the class which contains the method.
 	
 22) What does static mean? Why/where/when would we use static as opposed to non-static?
 
+	You should use static when the property you are creating will be used outside of the current object. 
+	
+
 23) Write a complete method that reverses an array in place using only one extra variable:
+
+	static void arrayReverse(int[] x){
+	
+		List<Integer> y = new ArrayList();
+	
+		for(int i = x.size -1; i >= 0; i--){
+			y.add(x[i])
+		}
+		
+		for(int i = 0; i < x.size; i++){
+			x[i] = y.getIndex(i);
+		}
+	}
 
 24) When should you throw an exception rather than catch the exception?
 
+	You should throw an exception when the caller of the exception would need to know about the occurence of an exception.
+
 25) Demonstrate a while loop, and a for loop, that print out every other odd number between 1000 and 0 in a descending fashion:
+	int x = 1000;
+	
+	while (x >= 0) {
+		if (x % 2 != 0) {
+			System.out.println(x);
+		}
+		x--;
+	}
+	
+	for (int i = 1000; i >= 0; i--){
+		if (i % 2 != 0) {
+			System.out.println(i);
+		}
+	}
 
 26) What is pass by value? How does it compare to pass by reference?
 
+	I can't remember
+
 27) How comfortable do you feel answering the questions above?
+
+	Not at all comfortable
 
 28) Please outline the workflow for Git & GitHub - be as specific as possible
 
+	Once you have made your changes you must first add your changes using the command:
+		git add FileName
+	
+	you need commit your changes and put a comment using the command:
+		git commit FileName -m "commit comment"
+		
+	After this you need to push your changes with:
+		git push
+
 29) Please write down as many CLI commands that you can think of:
+	cd
+	pwd
+	ls
+	mkdir
+	ping
+	git status
+	git add
+	git push
+	git pull
+	git branch
+	vim
 
 30) Please explain what a method "return type" is:
 
+	A return type is the data type that a method will return when called.
+
 31) Please demonstrate a switch statement below:
+
 
 32) What does it mean to "pass" values to a method? 
 
+	Passing values to a method is where the caller of the method gives the method the information it needs to run.
+
 33) What are method parameters?
+
+	Method parameters are the variables that can be passed into the method.
 
 34) What is an instance variable? How does an instance variable differ from other variables in a class/method?
 
+	
+
 35) Please demonstrate the use of a "for each" loop:
+
+	int[] = {1,2,3}
+
+	for	(i : intArray) {
+		System.out.println(i);
+	}
 
 36) What is an interface? What makes an interface unique?
 
+	Interfaces are a structure which can be inherited by a class.
+
 37) Please demonstrate a complete try/catch/finally block:
+	static int divide (x, y){
+		try {
+		 	 return x/y;
+		}
+		catch (Exception e){
+			System.out.println("Exception caught");
+		}
+		finally {
+			System.out.println("Completed");
+		}
+	}
 
 38) When do we use "throw" and "throws"?
 
+	We use throw and throws when we use a try catch block and we want to throw a potential exception up to the
+	caller of the method.
+	throw is used in a catch block to throw a a specific exception.
+	throws is used in the method signature to indicate it can throw an exception.
+	
 39) How comfortable do you feel with the material covered above?
+
+	Some things comfortable but others not so much
 
 40) Please create a new GitHub repository on your GitHub called "checkpoints" and push this file to it. Please send Roi and Trevor a link to this file on your GitHub after you have pushed it to your GitHub.
 	Hint: use "git remote add <your_name> <url_to_your_new_repo>" to add a second remote repository then use "git push <your_name> master" to push the code to your repoistory rather than mine.
 
 41) What grade would you give yourself on this exam?
+
+	a C?
 
 Bonus: Write a bubble sort - extra bonus, make that bubble sort generic:
 
